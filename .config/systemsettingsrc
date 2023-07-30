@@ -1,0 +1,22 @@
+[KFileDialog Settings]
+Recent Files[$e]=GloriousDark.colors,file:$HOME/Downloads/GloriousDark.colors
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=16
+iconViewIconSize=64
+
+[KPropertiesDialog]
+1920x1080 screen: Height=724
+1920x1080 screen: Width=540
+
+[MainWindow]
+1536x864 screen: Height=712
+1536x864 screen: Width=1160
+1670x939 screen: Height=700
+1670x939 screen: Width=1662
+1745x982 screen: Height=700
+1745x982 screen: Width=1020
+1920x1080 screen: Height=846
+1920x1080 screen: Width=1430
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABZYAAANOAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

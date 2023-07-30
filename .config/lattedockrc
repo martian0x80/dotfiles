@@ -1,0 +1,53 @@
+[DownloadDialog Settings]
+1920x1080 screen: Height=648
+1920x1080 screen: Width=976
+
+[KFileDialog Settings]
+iconViewIconSize=64
+
+[KPropertiesDialog]
+1920x1080 screen: Height=714
+1920x1080 screen: Width=479
+
+[LatteSettingsDialog]
+downloadWindowSize=980,600
+windowSize=1100,838
+
+[LatteSettingsDialog][DetailsDialog]
+windowSize=635,689
+
+[LatteSettingsDialog][TabLayouts]
+columnWidths=66,508,129,104
+sortColumn=3
+sortOrder=0
+
+[LatteSettingsDialog][ViewsDialog]
+columnWidths=66,256,142,135,131
+sortColumn=2
+sortOrder=0
+windowSize=980,630
+
+[PlasmaThemeExtended]
+outlineWidth=1
+
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
+[ScreenConnectors]
+10=eDP-1:::0,0 1920x1080
+
+[UniversalSettings]
+badges3DStyle=true
+canDisableBorders=true
+contextMenuActionsAlwaysShown=_layouts,_preferences,_quit_latte,_separator1,_add_latte_widgets,_add_view
+inAdvancedModeForEditSettings=true
+isAvailableGeometryBroadcastedToPlasma=true
+launchers=
+memoryUsage=0
+metaPressAndHoldEnabled=true
+mouseSensitivity=1
+screenTrackerInterval=2500
+showInfoWindow=true
+singleModeLayoutName=Extended
+userConfiguredAutostart=true
+version=2
