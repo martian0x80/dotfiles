@@ -34,7 +34,7 @@ wobblywindowsEnabled=true
 padding=4
 
 [Tiling][3c373409-48e0-57e9-a1a9-eb32e49f8772]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.275},{"width":0.5},{"width":0.22499999999999998}]}
 
 [Windows]
 BorderlessMaximizedWindows=false
