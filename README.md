@@ -2,6 +2,8 @@
 
 Welcome to my Fedora Workstation 38 dotfiles repository.
 
+![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/Screenshot_20230804_161433-1.png "Take a peek")
+
 ## What's Inside
 
 - **Desktop Environment**: KDE Plasma
