@@ -10,7 +10,7 @@ Welcome to my Fedora Workstation 38 dotfiles repository.
 - **Display Server**: Wayland
 - **Global Theme**: Glassy
 - **Plasma Style**: WinSur-dark.
-- **Color Schemes**: Choose from "Materia Dark," "Night Owl," or "Glorious Dark" (\* preferred).
+- **Color Schemes**: Choose from "Materia Dark", "Night Owl" or "Glorious Dark" (\* preferred).
 - **Window Decorations**: Klassy with Redmond icons.
 - **Icons**: La Capitaine
 - **Splash Screen**: [BeautifulTreeAnimation](https://store.kde.org/p/1433200)

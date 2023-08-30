@@ -3,6 +3,8 @@
 1920x1080 screen: Width=976
 
 [KFileDialog Settings]
+Recent Files[$e]=Extended.layout.latte,file:$HOME/Current-Extended - 2.layout.latte
+Recent URLs[$e]=file:$HOME/Documents/,file:$HOME/
 iconViewIconSize=64
 
 [KPropertiesDialog]
@@ -11,7 +13,7 @@ iconViewIconSize=64
 
 [LatteSettingsDialog]
 downloadWindowSize=980,600
-windowSize=1100,838
+windowSize=1100,881
 
 [LatteSettingsDialog][DetailsDialog]
 windowSize=635,689
@@ -45,9 +47,9 @@ isAvailableGeometryBroadcastedToPlasma=true
 launchers=
 memoryUsage=0
 metaPressAndHoldEnabled=true
-mouseSensitivity=1
+mouseSensitivity=0
 screenTrackerInterval=2500
 showInfoWindow=true
-singleModeLayoutName=Extended
+singleModeLayoutName=Extended - 2
 userConfiguredAutostart=true
 version=2
