@@ -7,11 +7,20 @@ Number=1
 Rows=1
 
 [Effect-blur]
-BlurStrength=14
+BlurStrength=12
+NoiseStrength=7
+
+[Effect-kwin4_effect_translucency]
+IndividualMenuConfig=true
 
 [Effect-windowview]
 BorderActivateAll=9
 TouchBorderActivate=0
+
+[Effect-wobblywindows]
+Drag=85
+Stiffness=10
+WobblynessLevel=1
 
 [ElectricBorders]
 BottomRight=ShowDesktop
@@ -25,10 +34,22 @@ Active=true
 [Plugins]
 blurEnabled=true
 forceblurEnabled=true
+kwin4_effect_squashEnabled=false
 kwin4_effect_translucencyEnabled=true
+magiclampEnabled=true
+minimizeallEnabled=false
 sheetEnabled=true
 thumbnailasideEnabled=true
 wobblywindowsEnabled=true
+
+[Script-forceblur]
+blurContent=true
+blurExceptMatching=true
+blurMatching=false
+
+[TabBox]
+LayoutName=coverswitch
+ShowDesktopMode=1
 
 [Tiling]
 padding=4

@@ -3,13 +3,13 @@
 1920x1080 screen: Width=976
 
 [KFileDialog Settings]
-Recent Files[$e]=Extended.layout.latte,file:$HOME/Current-Extended - 2.layout.latte
+Recent Files[$e]=Extended.layout.latte,file:$HOME/Extended - 2.layout.latte
 Recent URLs[$e]=file:$HOME/Documents/,file:$HOME/
 iconViewIconSize=64
 
 [KPropertiesDialog]
 1920x1080 screen: Height=714
-1920x1080 screen: Width=479
+1920x1080 screen: Width=545
 
 [LatteSettingsDialog]
 downloadWindowSize=980,600
