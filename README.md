@@ -1,9 +1,14 @@
 # My Fedora Workstation 38 Dotfiles
 
 Welcome to my Fedora Workstation 38 dotfiles repository.
+The repository content is too old. I have since moved from Gnome/KDE Plasma to hyprland.
 
-![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/Screenshot_20230804_161433-1.png "Take a peek")
-![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/Screenshot_20230830_121849-obfuscated.png "Take a peek")
+Here's a peek of my current desktop:
+![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/hyprland_rice0.png)
+![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/hyprland_rice1.png)
+![KDE Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/Screenshot_20230804_161433-1.png "Take a peek")
+![KDE Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/Screenshot_20230830_121849-obfuscated.png "Take a peek")
+
 ## What's Inside
 
 - **Desktop Environment**: KDE Plasma
@@ -15,10 +20,12 @@ Welcome to my Fedora Workstation 38 dotfiles repository.
 - **Icons**: La Capitaine
 - **Splash Screen**: [BeautifulTreeAnimation](https://store.kde.org/p/1433200)
 - **Plymouth Theme**: Explore the captivating "Lone" theme and more [here](https://github.com/adi1090x/plymouth-themes).
+- **Dock**: Latte Dock.
+- **Editor**: Helix, NeoVim, Kate.
 
 ## Make It Your Own
 
-Feel free to explore and adapt these dotfiles to suit your preferences. Just follow these steps:
+Feel free to explore and adapt these dotfiles to suit your preferences. Please, do not just smash the configs into `~/.config`. Just follow these steps:
 
 1. Clone the repository.
 2. Customize the configuration files.
