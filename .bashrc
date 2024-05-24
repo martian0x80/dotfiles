@@ -30,3 +30,6 @@ unset rc
 export GPG_TTY=\$(tty)
 
 alias config='/usr/bin/git --git-dir=/home/martian/.cfg/ --work-tree=/home/martian'
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"

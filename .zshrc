@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -47,12 +47,12 @@ ZSH_THEME="robbyrussell"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -70,7 +70,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting ssh-agent thefuck)
+
+
+zstyle :omz:plugins:ssh-agent agent-forwarding yes
+zstyle :omz:plugins:ssh-agent identities ~/.ssh/git ~/Documents/azure/key.pem
+zstyle :omz:plugins:ssh-agent lazy yes
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,8 +110,22 @@ alias config='/usr/bin/git --git-dir=/home/martian/.cfg/ --work-tree=/home/marti
 path+=('$HOME/.local/bin')
 export PATH
 export ANDROID_HOME=/home/martian/Installation_Dir/Android/sdk/
-export PATH=/home/martian/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin:/home/martian/.dotnet/tools:$HOME/.local/bin:/path/to/sdk/tools:/path/to/sdk/platform-tools:/path/to/sdk/tools:/path/to/sdk/platform-tools
+export PATH=/home/martian/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin:/home/martian/.dotnet/tools:$HOME/.local/bin
 alias launch="dolphin /home/martian/Documents/Sound\ recordings/.h & disown"
-alias fuck="sudo !!"
-fortune | cowsay
 export EDITOR=/usr/bin/hx
+alias python='python3'
+alias ncspot='flatpak run io.github.hrkfdn.ncspot'
+alias xppen=/usr/lib/pentablet/PenTablet
+export SSH_ASKPASS=ksshaskpass
+
+
+eval "$(atuin init zsh --disable-up-arrow)"
+
+# bun completions
+[ -s "/home/martian/.bun/_bun" ] && source "/home/martian/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH=$PATH:/home/martian/.spicetify

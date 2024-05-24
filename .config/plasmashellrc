@@ -9,10 +9,11 @@ ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8AAAACAQAAAQAA
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=annie-spratt-0aF_vV0xgQk-unsplash.jpg,file:$HOME/.local/share/wallpapers/animated/city.gif
-Recent URLs[$e]=file:$HOME/.local/share/wallpapers/,file:$HOME/Pictures/wallpapers/,file:$HOME/,file:$HOME/.local/share/wallpapers/animated/
+Recent Files[$e]=annie-spratt-0aF_vV0xgQk-unsplash.jpg,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/wide_shiny_waves.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/wide_tokyonight_lines.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/wide_tokyonight_skyline.jpg,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/win-11.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/windmill.jpg,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/windows-black.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/windows-magenta-blue.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/windows-magenta-pink.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/windoze.jpg,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/wolverine.jpg,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/yellow_kyoto.jpg,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/yellow-robot.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/you-got-this.jpg,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/zorin-black-4k.png,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/zorin-magenta-blue.png,file:$HOME/Pictures/wallpapers/abstract/maze4k.png,file:$HOME/Pictures/wallpapers/abstract/minimal_squares.png,file:$HOME/Pictures/wallpapers/abstract/o6nxhmkfsd791.png,file:$HOME/Pictures/wallpapers/abstract/penrose_triangle_a_topological_picturebook.jpeg,file:$HOME/Pictures/wallpapers/abstract/smg9jgc1qxg81.jpg,file:$HOME/Pictures/wallpapers/abstract/wallhaven-4owpzm.jpg,file:$HOME/Pictures/wallpapers/abstract/wallhaven-95y961.png,file:$HOME/Pictures/wallpapers/abstract/wallhaven-j89okp.png,file:$HOME/Pictures/wallpapers/abstract/wallhaven-lqmg7q.jpg,file:$HOME/Pictures/wallpapers/abstract/wallhaven-o33x55.png,file:$HOME/Pictures/wallpapers/abstract/wallhaven-ox7qxp.jpg,file:$HOME/Pictures/wallpapers/abstract/wallhaven-wqqerq.png,file:$HOME/Pictures/wallpapers/abstract/wallpaper.jpg,file:$HOME/Pictures/wallpapers/abstract/wp5121892.jpg
+Recent URLs[$e]=file:$HOME/.local/share/wallpapers/,file:$HOME/Pictures/wallpapers/,file:$HOME/,file:$HOME/Pictures/wallpapers/abstract/,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/
 detailViewIconSize=16
 iconViewIconSize=64
+listViewIconSize=64
 
 [KPropertiesDialog]
 1536x864 screen: Height=532
@@ -20,7 +21,7 @@ iconViewIconSize=64
 1670x939 screen: Height=529
 1670x939 screen: Width=455
 1920x1080 screen: Height=714
-1920x1080 screen: Width=504
+1920x1080 screen: Width=572
 
 [PlasmaTransientsConfig]
 PreloadWeight=0
@@ -28,11 +29,23 @@ popupHeight=666
 popupWidth=873
 
 [PlasmaTransientsConfig][ConfigDialog]
-DialogHeight=99
+DialogHeight=92
 DialogWidth=1920
 
 [PlasmaViews][Panel 113][Defaults]
 thickness=50
+
+[PlasmaViews][Panel 127][Defaults]
+thickness=64
+
+[PlasmaViews][Panel 156]
+alignment=1
+floating=1
+panelOpacity=0
+panelVisibility=0
+
+[PlasmaViews][Panel 156][Defaults]
+thickness=40
 
 [PlasmaViews][Panel 2]
 alignment=1
@@ -48,6 +61,24 @@ thickness=24
 [PlasmaViews][Panel 2][Horizontal1670]
 maxLength=1536
 minLength=1536
+
+[PlasmaViews][Panel 202]
+alignment=132
+floating=1
+panelOpacity=2
+panelVisibility=1
+
+[PlasmaViews][Panel 202][Defaults]
+thickness=61
+
+[PlasmaViews][Panel 211]
+alignment=132
+floating=1
+panelOpacity=2
+panelVisibility=1
+
+[PlasmaViews][Panel 211][Defaults]
+thickness=52
 
 [PlasmaViews][Panel 26][Defaults]
 thickness=44
@@ -69,4 +100,4 @@ minLength=1670
 thickness=50
 
 [Updates]
-performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/00-start-here-2.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/00-start-here-2.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/folderview_fix_recursive_screenmapping.js

@@ -3,13 +3,14 @@
 1920x1080 screen: Width=976
 
 [KFileDialog Settings]
-Recent Files[$e]=Extended.layout.latte,file:$HOME/Extended - 2.layout.latte
+Recent Files[$e]=Extended.layout.latte,file:$HOME/mori.layout.latte,file:$HOME/xmobar_float.layout.latte
 Recent URLs[$e]=file:$HOME/Documents/,file:$HOME/
 iconViewIconSize=64
+listViewIconSize=64
 
 [KPropertiesDialog]
 1920x1080 screen: Height=714
-1920x1080 screen: Width=545
+1920x1080 screen: Width=514
 
 [LatteSettingsDialog]
 downloadWindowSize=980,600
@@ -27,7 +28,7 @@ sortOrder=0
 columnWidths=66,256,142,135,131
 sortColumn=2
 sortOrder=0
-windowSize=980,630
+windowSize=980,859
 
 [PlasmaThemeExtended]
 outlineWidth=1
@@ -37,6 +38,7 @@ PreloadWeight=42
 
 [ScreenConnectors]
 10=eDP-1:::0,0 1920x1080
+11=HDMI-A-1:::1920,0 1360x768
 
 [UniversalSettings]
 badges3DStyle=true
@@ -50,6 +52,6 @@ metaPressAndHoldEnabled=true
 mouseSensitivity=0
 screenTrackerInterval=2500
 showInfoWindow=true
-singleModeLayoutName=Extended - 2
+singleModeLayoutName=xmobar_float
 userConfiguredAutostart=true
 version=2

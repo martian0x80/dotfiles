@@ -8,10 +8,15 @@ Rows=1
 
 [Effect-blur]
 BlurStrength=12
-NoiseStrength=7
+
+[Effect-desktopgrid]
+BorderActivate=5
+
+[Effect-kwin4_effect_login]
+FadeToBlack=true
 
 [Effect-kwin4_effect_translucency]
-IndividualMenuConfig=true
+MoveResize=81
 
 [Effect-windowview]
 BorderActivateAll=9
@@ -22,20 +27,30 @@ Drag=85
 Stiffness=10
 WobblynessLevel=1
 
+[Effect-zoom]
+EnableFocusTracking=true
+EnableTextCaretTracking=true
+
 [ElectricBorders]
 BottomRight=ShowDesktop
 
 [ModifierOnlyShortcuts]
-Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
+Meta=org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu
 
 [NightColor]
 Active=true
+LatitudeAuto=28.6542
+LongitudeAuto=77.2373
+NightTemperature=4200
 
 [Plugins]
 blurEnabled=true
 forceblurEnabled=true
+krohnkiteEnabled=false
+kwin4_effect_eyeonscreenEnabled=true
 kwin4_effect_squashEnabled=false
 kwin4_effect_translucencyEnabled=true
+kwin4_effect_windowapertureEnabled=false
 magiclampEnabled=true
 minimizeallEnabled=false
 sheetEnabled=true
@@ -48,14 +63,16 @@ blurExceptMatching=true
 blurMatching=false
 
 [TabBox]
-LayoutName=coverswitch
 ShowDesktopMode=1
 
 [Tiling]
 padding=4
 
 [Tiling][3c373409-48e0-57e9-a1a9-eb32e49f8772]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.275},{"width":0.5},{"width":0.22499999999999998}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.3312499999999991},{"width":0.3453125000000014},{"width":0.3234374999999995}]}
+
+[Tiling][b20126c7-019d-5b40-938f-41081ad65d6a]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
 BorderlessMaximizedWindows=false

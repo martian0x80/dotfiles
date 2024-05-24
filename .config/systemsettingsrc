@@ -1,8 +1,15 @@
+[Audio Preview Settings]
+Autoplay=false
+
+[FileDialogSize]
+1920x1080 screen: Window-Maximized=true
+
 [KFileDialog Settings]
-Recent Files[$e]=GloriousDark.colors,file:$HOME/Pictures/wallpapers/monochrome/brian-patrick-tagalog-_8hGFBxWD0A-unsplash.jpg
-Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/Pictures/wallpapers/monochrome/
+Recent Files[$e]=GloriousDark.colors,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/rad_samurai.jpg,file:$HOME/Pictures/wallpapers/monochrome/brian-patrick-tagalog-_8hGFBxWD0A-unsplash.jpg
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/Pictures/wallpapers/monochrome/,file:$HOME/Pictures/wallpapers/aesthetic-wallpapers-main/
 detailViewIconSize=16
 iconViewIconSize=64
+listViewIconSize=64
 
 [KPropertiesDialog]
 1920x1080 screen: Height=724
@@ -15,8 +22,11 @@ iconViewIconSize=64
 1670x939 screen: Width=1662
 1745x982 screen: Height=700
 1745x982 screen: Width=1020
-1920x1080 screen: Height=846
-1920x1080 screen: Width=1430
+1920x1080 screen: Height=1080
+1920x1080 screen: Width=1920
+1920x1080 screen: Window-Maximized=true
+2 screens: Height=770
+2 screens: Width=1122
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABZYAAANOAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPpAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
