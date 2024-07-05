@@ -1,9 +1,12 @@
-# My Fedora Workstation 38 Dotfiles
+<div align="center"><h1>My Dotfiles</h1>
 
-Welcome to my Fedora Workstation 38 dotfiles repository.
-The repository content is too old. I have since moved from Gnome/KDE Plasma to hyprland.
+Welcome to my Arch dotfiles repository.<br/>
+I use EndeavourOS with Hyprland as the Wayland Compositor, with Waybar and Eww for status bars and widgets.
+</div>
 
 ### Here's a peek of my current desktop:
+
+![Current Desktop](https://github.com/martian0x80/dotfiles/assets/26498920/dbaafbdb-2b2e-47e6-a893-2f5e2be9f3fb)
 ![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/hyprland_rice1.png)
 ![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/hyprland_rice0.png)
 
@@ -13,17 +16,11 @@ The repository content is too old. I have since moved from Gnome/KDE Plasma to h
 
 ## What's Inside
 
-- **Desktop Environment**: KDE Plasma
+- **Wayland Compositor**: Hyprland
 - **Display Server**: Wayland
-- **Global Theme**: Glassy
-- **Plasma Style**: WinSur-dark.
-- **Color Schemes**: Choose from "Materia Dark", "Night Owl" or "Glorious Dark" (\* preferred).
-- **Window Decorations**: Klassy with Redmond icons.
-- **Icons**: La Capitaine
-- **Splash Screen**: [BeautifulTreeAnimation](https://store.kde.org/p/1433200)
-- **Plymouth Theme**: Explore the captivating "Lone" theme and more [here](https://github.com/adi1090x/plymouth-themes).
+- **Multiplexor**: Zellij
 - **Terminal**: Kitty, Konsole.
-- **Dock**: Latte Dock.
+- **Dock**: Eww, Waybar.
 - **Editor**: Helix, NeoVim, Kate.
 
 ## Make It Your Own
