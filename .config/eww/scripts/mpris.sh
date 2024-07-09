@@ -13,10 +13,16 @@ playerctl metadata -F -f '{{playerName}} {{title}} {{artist}} {{mpris:artUrl}} {
     fi
     # Delete the image for the current song
     rm -f "${base_dir}image.jpg"
+
+    prefix=$(echo $artUrl | cut -d'/' -f1)
+    if [[ $prefix == 'file:' ]]; then
+        artUrl="$(echo $artUrl | cut -d'/' -f3-)"
+        cp "$artUrl" "${base_dir}image.jpg"
+    else
     # Download the album art for the current song as "image.jpg"
-    #wget -q -O "${base_dir}image.jpg" "$artUrl"
-    artUrl="/tmp/$(echo $artUrl | cut -d'/' -f5)"
-    cp "$artUrl" "${base_dir}image.jpg"
+        wget -q -O "${base_dir}image.jpg" "$artUrl"
+    fi
+    
     lengthStr=$(playerctl metadata -f "{{duration(mpris:length)}}")
 
     JSON_STRING=$( jq -n \
