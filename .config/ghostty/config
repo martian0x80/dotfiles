@@ -1,0 +1,37 @@
+term = xterm-ghostty
+theme = UltraDark
+
+font-family = "FiraMono Nerd Font"
+font-thicken = true
+font-size = 14
+
+mouse-hide-while-typing = true
+
+window-decoration = true
+macos-titlebar-style = hidden
+
+cursor-style = block
+
+# alt + click to move
+cursor-click-to-move = true
+
+# to allow changing cursor styles
+shell-integration-features = no-cursor
+window-inherit-working-directory = true
+
+window-height = 27
+window-width = 125
+
+background = 000000
+background-opacity = 0.7
+background-blur-radius = 2
+
+# keybinds
+keybind = global:cmd+s=toggle_quick_terminal
+keybind = ctrl+t=new_tab
+keybind = ctrl+shift+r=reload_config
+keybind = alt+right=new_split:right
+keybind = alt+left=new_split:left
+keybind = alt+down=new_split:down
+keybind = alt+up=new_split:up
+keybind = alt+q=close_surface
