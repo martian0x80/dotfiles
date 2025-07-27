@@ -1,13 +1,8 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Clipboard Config - Clipboard */
+/* Main Config - For Keybinds generation */
 
 @import "~/.config/rofi/config.rasi"  
 
-/* ---- Window ---- */
-window {
-  width: inherit;
-  height: inherit;
-}
 
 /* ---- Mainbox ---- */
 mainbox {
@@ -17,17 +12,23 @@ mainbox {
 
 /* ---- Entry ---- */
 entry {
-  width: inherit;
-  placeholder: " 📋 Search  Clipboard ";
+  expand: true;
+  placeholder: " 🧮 Search Keybinds";
 }
 
 /* ---- Listview ---- */
 listview {
-  columns: 1;
+  columns: 2;
   lines: 8;
-  fixed-height: true;
+  fixed-height: false;
+  scrollbar: true;
   spacing: 6px;
   cycle: true;
+}
+
+window {
+  width: 90%;
+  height: inherit;
 }
 
 /* ---- Elements ---- */
@@ -36,12 +37,12 @@ element {
 }
 
 element-icon {
-  size: 0%;
+  	size: 0%;
 }
 
 element-text {
-  horizontal-align: 0.0;
-  vertical-align: 0.5;
-  margin: 0px;
-  padding: 0px;
+    horizontal-align: 0.0;
+    vertical-align: 0.5;
+    margin: 0px;
+    padding: 0px;
 }

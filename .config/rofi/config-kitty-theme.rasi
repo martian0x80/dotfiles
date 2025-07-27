@@ -32,13 +32,13 @@ inputbar {
 
 entry {
   expand: true;
-  placeholder: " 🪟  Search / Choose ZSH theme";
+  placeholder: " 🐾  Choose Kitty theme: Enter to Preview; CTRL S to Apply";
 }
 
 /* ---- Listview ---- */
 listview {
   columns: 3;
-  lines: 3;
+  lines: 4;
   spacing: 4px;
   border-radius: 10px;
   cycle: true;

@@ -1,5 +1,5 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Main Config (Waybar Layout) */
+/* Monitor Profiles Menu */
 
 @import "~/.config/rofi/config.rasi" 
 
@@ -7,11 +7,6 @@
 mainbox {
   children:
     [ "inputbar", "message", "listview"];
-}
-
-/* ---- Configuration ---- */
-configuration {
-  modi: "drun";
 }
 
 /* ---- Window ---- */
@@ -22,18 +17,18 @@ window {
 
 /* ---- Entry ---- */ 
 entry {
-  expand: true;
-  placeholder: " 🖼️  Search / Choose Waybar Layout";
+  width: 43%;
+  placeholder: " 💻 Search / Choose which Monitor Profiles to load";
+  horizontal-align: 0.5;
 }
 
 /* ---- Listview ---- */
 listview {
   columns: 2;
-  lines: 7;
+  lines: 3;
   fixed-height: false;
   margin: 10px;
   scrollbar: true;
-  spacing: 6px;
   cycle: true;
 }
 
@@ -42,7 +37,7 @@ element-icon {
   size: 0%;
 }
 element-text {
-  horizontal-align: 0.0;
-  margin: 0px;
-  padding: 0px;
+  horizontal-align: 0.5;
+  vertical-align: 0.0;
+  margin: 5px 30px 5px 30px;
 }

@@ -1,13 +1,7 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Clipboard Config - Clipboard */
+/* KooL Hyprland Edit Rofi Config */
 
 @import "~/.config/rofi/config.rasi"  
-
-/* ---- Window ---- */
-window {
-  width: inherit;
-  height: inherit;
-}
 
 /* ---- Mainbox ---- */
 mainbox {
@@ -15,20 +9,36 @@ mainbox {
     [ "inputbar", "message", "listview"];
 }
 
-/* ---- Entry ---- */
-entry {
-  width: inherit;
-  placeholder: " 📋 Search  Clipboard ";
+
+/* ---- Configuration ---- */ 
+configuration {
+  modi: "drun";
 }
+
+/* ---- Window ---- */
+window {
+   width: 70%;
+   height: inherit;
+}
+
 
 /* ---- Listview ---- */
 listview {
-  columns: 1;
-  lines: 8;
-  fixed-height: true;
+  columns: 3;
+  lines: 6;
+  fixed-height: false;
+  scrollbar: true;
   spacing: 6px;
   cycle: true;
 }
+
+/* ---- Entry input ---- */
+entry {
+  expand: true;
+  placeholder: " 💫  Customize KooL Hyprland  💫";
+  horizontal-align: 0.5;
+}
+
 
 /* ---- Elements ---- */
 element {
@@ -38,10 +48,8 @@ element {
 element-icon {
   size: 0%;
 }
-
 element-text {
   horizontal-align: 0.0;
-  vertical-align: 0.5;
   margin: 0px;
   padding: 0px;
 }

@@ -1,13 +1,7 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Clipboard Config - Clipboard */
+/* Animations Menu */
 
-@import "~/.config/rofi/config.rasi"  
-
-/* ---- Window ---- */
-window {
-  width: inherit;
-  height: inherit;
-}
+@import "~/.config/rofi/config.rasi" 
 
 /* ---- Mainbox ---- */
 mainbox {
@@ -15,33 +9,36 @@ mainbox {
     [ "inputbar", "message", "listview"];
 }
 
-/* ---- Entry ---- */
-entry {
+/* ---- Window ---- */
+window {
   width: inherit;
-  placeholder: " 📋 Search  Clipboard ";
+  height: inherit;
+}
+
+/* ---- Entry ---- */ 
+entry {
+  width: 43%;
+  placeholder: " ✨ Search / Choose which Animations to load";
 }
 
 /* ---- Listview ---- */
 listview {
-  columns: 1;
-  lines: 8;
-  fixed-height: true;
+  columns: 2;
+  lines: 7;
+  fixed-height: false;
+  margin: 10px;
+  scrollbar: true;
   spacing: 6px;
   cycle: true;
 }
 
 /* ---- Elements ---- */
-element {
-  orientation: horizontal;
-}
-
 element-icon {
   size: 0%;
 }
-
 element-text {
   horizontal-align: 0.0;
-  vertical-align: 0.5;
+  vertical-align: 0.0;
   margin: 0px;
   padding: 0px;
 }

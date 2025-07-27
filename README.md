@@ -1,12 +1,16 @@
 <div align="center"><h1>My Dotfiles</h1>
 
-Welcome to my Arch dotfiles repository.<br/>
-I use EndeavourOS with Hyprland as the Wayland Compositor, with Waybar and Eww for status bars and widgets.
+Welcome to my dotfiles repository.<br/>
+I use EndeavourOS with Niri as the Wayland Compositor, with Waybar and rofi for status bars and widgets.
 </div>
 
-### Here's a peek of my current desktop:
+### Here's my current niri setup
+![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/niri_0.png)
+![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/niri_2.png)
+![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/niri_1.png)
 
-![Current Desktop](https://github.com/martian0x80/dotfiles/assets/26498920/dbaafbdb-2b2e-47e6-a893-2f5e2be9f3fb)
+### Here's a peek of my old hyprland desktop:
+
 ![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/hyprland_rice1.png)
 ![Current Desktop](https://raw.githubusercontent.com/martian0x80/dotfiles/master/Pictures/hyprland_rice0.png)
 
@@ -16,12 +20,12 @@ I use EndeavourOS with Hyprland as the Wayland Compositor, with Waybar and Eww f
 
 ## What's Inside
 
-- **Wayland Compositor**: Hyprland
+- **Wayland Compositor**: Niri
 - **Display Server**: Wayland
 - **Multiplexor**: Zellij
-- **Terminal**: Kitty, Konsole.
-- **Dock**: Eww, Waybar.
-- **Editor**: Helix, NeoVim, Kate.
+- **Terminal**: Foot.
+- **Dock**: Waybar.
+- **Editor**: NeoVim, Zed, Code.
 
 ## Make It Your Own
 
