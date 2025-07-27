@@ -9,7 +9,7 @@
 @define-color green      #b8bb26;
 
 * {
-	font-family: "JetBrains Mono Nerd Font";
+	font-family: "JetBrainsMono Nerd Font";
 	font-weight: bold;
 	min-height: 0;	
 	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
@@ -68,16 +68,29 @@ window#waybar {
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-browser,
+#custom-cava_mviz,
 #custom-cycle_wall,
-#custom-hint,
+#custom-dot_update,
+#custom-file_manager,
+#custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
 #custom-lock,
+#custom-hint,
+#custom-hypridle,
 #custom-menu,
+#custom-playerctl,
 #custom-power_vertical,
 #custom-power,
+#custom-quit,
+#custom-reboot,
+#custom-settings,
+#custom-spotify,
 #custom-swaync,
+#custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
@@ -89,8 +102,8 @@ window#waybar {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
+  padding: 6px;
   color: @foreground;
-  padding: 3px 6px 3px 6px;
 }
 
 #battery.warning,
@@ -99,6 +112,29 @@ window#waybar {
 #cpu.warning {
   border-top: 3px solid @background;
   border-bottom: 3px solid yellow;
+}
+
+@keyframes blink {
+  to {
+    color: @background;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: @red;
+  color: white;
+  animation-name: blink;
+  animation-duration: 3.0s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  box-shadow: inset 0 -3px transparent;
+}
+
+/*-----Indicators----*/
+#custom-hypridle.notactive,
+#idle_inhibitor.activated {
+	color: #39FF14;
 }
 
 #battery.critical,
@@ -118,6 +154,7 @@ window#waybar {
   border-bottom: 3px solid green;
 }
 
+#backlight-slider slider,
 #pulseaudio-slider slider {
 	min-width: 0px;
 	min-height: 0px;
@@ -126,38 +163,18 @@ window#waybar {
 	border: none;
 	box-shadow: none;
 }
-	
+
+#backlight-slider trough,
 #pulseaudio-slider trough {
 	min-width: 80px;  
 	min-height: 5px; 
 	border-radius: 5px;
 	background-color: @dim;
 }
-	
+
+#backlight-slider highlight,
 #pulseaudio-slider highlight {
 	min-height: 10px; 
-	border-radius: 5px;
-	background-color: @green;
-}
-
-#backlight-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
-}
-	
-#backlight-slider trough {
-	min-width: 80px;  
-	min-height: 10px; 
-	border-radius: 5px;
-	background-color: @dim;
-}
-	
-#backlight-slider highlight {
-	min-width: 10px; 
 	border-radius: 5px;
 	background-color: @green;
 }

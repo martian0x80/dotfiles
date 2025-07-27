@@ -28,24 +28,15 @@ tooltip label{
 	color: black;
 }
 /*-----module groups----*/
+.modules-left,
+.modules-center,
 .modules-right {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-right: 4px;
 	padding-left: 4px;
 }
-.modules-center {
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 4px;
-	padding-left: 4px;
-}
-.modules-left {
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 4px;
-	padding-left: 4px;
-}
+
 /*-----modules indv----*/
 #taskbar button,
 #workspaces button {
@@ -104,17 +95,29 @@ tooltip label{
 #wireplumber,
 #workspaces,
 #custom-backlight,
+#custom-browser,
 #custom-cava_mviz,
 #custom-cycle_wall,
-#custom-hint,
+#custom-dot_update,
+#custom-file_manager,
+#custom-keybinds,
 #custom-keyboard,
 #custom-light_dark,
 #custom-lock,
+#custom-hint,
+#custom-hypridle,
 #custom-menu,
-#custom-power,
+#custom-playerctl,
 #custom-power_vertical,
+#custom-power,
+#custom-quit,
+#custom-reboot,
+#custom-settings,
+#custom-spotify,
 #custom-swaync,
+#custom-tty,
 #custom-updater,
+#custom-hyprpicker,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
@@ -126,11 +129,11 @@ tooltip label{
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-    background-image: linear-gradient(45deg, #14e81e 10%, #017ed5 54%, #8d00c4 90%);
+    background-image: linear-gradient(45deg, #95E6CB, #59C2FF, #D2A6FF);
 	color: black;
 	border: 1px;
 	border-style: solid;
-	border-radius: 4px;
+	border-radius: 6px;
 	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-right: 6px;
@@ -153,9 +156,11 @@ tooltip label{
 	padding-right: 12px;
 }
 /*-----Indicators----*/
+#custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #2dcc36;
+	color: #39FF14;
 }
+
 #pulseaudio.muted {
 	color: #cc3436;
 }
@@ -173,12 +178,13 @@ tooltip label{
 #battery.critical:not(.charging) {
 	color: #f53c3c;
 	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
+	animation-duration: 3.0s;
+	animation-timing-function: steps(12);
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
 
+#backlight-slider slider,
 #pulseaudio-slider slider {
 	min-width: 0px;
 	min-height: 0px;
@@ -188,6 +194,7 @@ tooltip label{
 	box-shadow: none;
 }
 
+#backlight-slider trough,
 #pulseaudio-slider trough {
 	background-color: #7f849c;
 	min-width: 80px;
@@ -195,28 +202,8 @@ tooltip label{
 	border-radius: 5px;
 }
 
+#backlight-slider highlight,
 #pulseaudio-slider highlight {
 	min-height: 10px;
-	border-radius: 5px;
-}
-
-#backlight-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
-}
-
-#backlight-slider trough {
-	background-color: #7f849c;
-	min-width: 80px;
-	min-height: 10px;
-	border-radius: 5px;
-}
-
-#backlight-slider highlight {
-	min-width: 10px;
 	border-radius: 5px;
 }

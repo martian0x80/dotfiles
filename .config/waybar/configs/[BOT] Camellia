@@ -6,7 +6,13 @@
 
 {
  
-"include": "~/.config/waybar/modules",
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  ],
 "layer": "top",
 //"mode": "dock",
 "exclusive": true,
@@ -24,7 +30,7 @@
 	"hyprland/workspaces#cam",
 	"custom/separator#line",
 	"mpris",
-	"custom/swaync",
+	"group/notify",
 	"tray", 
 	"wlr/taskbar"],
 
@@ -35,6 +41,7 @@
 	"backlight/slider",
 	"custom/speaker",
 	"pulseaudio/slider",
+	"power-profiles-daemon",
 	"battery",
 	"clock#3", 
 	"network"],

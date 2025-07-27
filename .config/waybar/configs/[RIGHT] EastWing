@@ -3,7 +3,14 @@
 // ### RIGHT PANEL ### //
 
 {
-"include": "~/.config/waybar/modules",
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  "$HOME/.config/waybar/ModulesVertical",
+  ],
 "layer": "top",
 "position": "right",
 "margin-top": 8,
@@ -21,13 +28,14 @@
 ],
 
 "modules-center": [
+	"idle_inhibitor",
 	"hyprland/workspaces",
 ],
 
 "modules-right": [
 	"mpris",
 	"tray",
-	"custom/swaync",
+	"group/notify",
 	"backlight#vertical",
 	"pulseaudio#microphone_vertical",
 	"pulseaudio#vertical",

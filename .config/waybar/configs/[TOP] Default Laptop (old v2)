@@ -1,8 +1,14 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 
-// ### DEFAULT v3  - Top ### //
+// ### DEFAULT (Laptop)  - Top (old v2) ### //
 {
-"include": "~/.config/waybar/modules",
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  ],
 "layer": "top",
 //"mode": "dock",
 "exclusive": true,
@@ -22,17 +28,18 @@
 	"power-profiles-daemon",
 	"group/mobo_drawer",
 	"custom/separator#blank",
+	"group/laptop",
 	"custom/separator#line",
 	"custom/weather",
 	],
 
 "modules-center": [
-	"custom/swaync",
+	"group/notify",
 	"custom/cava_mviz",
 	"custom/separator#dot-line",
 	"clock",
 	"custom/separator#line",
-	"hyprland/workspaces#kanji",
+	"hyprland/workspaces#roman",
 	"custom/separator#dot-line",
 	"idle_inhibitor",	
 	"custom/hint",	

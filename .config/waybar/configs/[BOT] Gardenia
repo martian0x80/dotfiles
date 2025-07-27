@@ -6,7 +6,13 @@
 
 {
  
-"include": "~/.config/waybar/modules",
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  ],
 "layer": "top",
 //"mode": "dock",
 "exclusive": true,
@@ -23,14 +29,15 @@
 	"clock#5", 
 	"mpris", 
 	"tray", 
-	"custom/swaync"
+	"group/notify"
 	],
 	  
 "modules-center": ["hyprland/workspaces#kanji"], 
 	
 "modules-right": [
 	"pulseaudio#1",
-	"backlight#2", 
+	"backlight#2",
+	"power-profiles-daemon", 
 	"battery"
 	],
 

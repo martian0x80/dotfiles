@@ -1,8 +1,14 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 
-// ### DEFAULT v2 (Laptop)  - Top ### //
+// ### DEFAULT (Laptop)  - Top (old v3) ### //
 {
-"include": "~/.config/waybar/modules",
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  ],
 "layer": "top",
 //"mode": "dock",
 "exclusive": true,
@@ -28,7 +34,7 @@
 	],
 
 "modules-center": [
-	"custom/swaync",
+	"group/notify",
 	"custom/cava_mviz",
 	"custom/separator#dot-line",
 	"clock",

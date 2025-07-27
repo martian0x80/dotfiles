@@ -3,7 +3,14 @@
 // ### LEFT PANEL ### //
 
 {
-"include": "~/.config/waybar/modules",
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  "$HOME/.config/waybar/ModulesVertical",
+  ],
 "layer": "top",
 "position": "left",
 "margin-top": 8,
@@ -16,18 +23,19 @@
 //"gtk-layer-shell": true,
   
 "modules-left": [
-	"clock#vertical",
+    "clock#vertical",
 	"custom/light_dark",
 ],
 
 "modules-center": [
+	"idle_inhibitor",
 	"hyprland/workspaces",
 ],
 
 "modules-right": [
 	"mpris",
 	"tray",
-	"custom/swaync",
+	"group/notify",
 	"backlight#vertical",
 	"pulseaudio#microphone_vertical",
 	"pulseaudio#vertical",

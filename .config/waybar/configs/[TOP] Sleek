@@ -2,7 +2,13 @@
 // Sleek
 
 {
-"include": "~/.config/waybar/modules",
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  ],
 "layer": "top",
 "position": "top",
 "height": 14,
@@ -24,15 +30,15 @@
 	"custom/separator#blank",
 	"clock#3",
 	"custom/separator#blank",
-	"custom/swaync"
+	"group/notify"
 ],
 		
 "modules-right": [
 	"hyprland/window",
-	"custom/separator#blank",
-	"custom/separator#blank", 
+	"custom/separator#blank_2",
 	"pulseaudio",
 	"custom/separator#blank",
+	"group/mobo_drawer",
 	"custom/power",					
 	],
 }
