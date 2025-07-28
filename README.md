@@ -5,6 +5,7 @@ I use EndeavourOS with Niri as the Wayland Compositor, with Waybar and rofi for 
 </div>
 
 ### Here's my current niri setup
+![Current Desktop](Pictures/niri.png)
 ![Current Desktop](Pictures/niri_0.png)
 ![Current Desktop](Pictures/niri_2.png)
 ![Current Desktop](Pictures/niri_1.png)
