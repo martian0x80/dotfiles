@@ -7,6 +7,10 @@ environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     XDG_CURRENT_DESKTOP "sway"
     QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORM "wayland"
+    // QT_STYLE_OVERRIDE "qt5ct-style"
+    // DISPLAY ":1"
+    XAUTHORITY "$HOME/.Xauthority"
   }
 
 // Input device configuration.
@@ -71,7 +75,6 @@ input {
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     disable-power-key-handling
     focus-follows-mouse
-
 }
 
 
@@ -96,7 +99,7 @@ output "eDP-1" {
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "1920x1080"
+    mode "2880x1800@120"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
     // scale 2
@@ -122,6 +125,7 @@ output "HDMI-A-1" {
     transform "normal"
     backdrop-color "#001100"
     position x=0 y=0
+    focus-at-startup
 }
 
 // gestures {
@@ -291,8 +295,14 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
-spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
+// spawn-at-startup "flameshot"
+// spawn-at-startup "xwayland-satellite" ":1"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "mpris-proxy"
+spawn-at-startup "swaync"
+spawn-at-startup "/usr/lib/org_kde_powerdevil"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -406,6 +416,10 @@ overview {
     zoom 0.4
 }
 
+hotkey-overlay {
+    skip-at-startup
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -424,6 +438,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    XF86TouchpadOff hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
@@ -437,6 +452,16 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+
+    // XF86AudioPlayPause { spawn "bash" "-c" "$HOME/.config/niri/scripts/W/MediaCtrl.sh" "--pause"; }
+    XF86AudioPause { spawn "bash" "-c" "$HOME/.config/niri/scripts/MediaCtrl.sh" "--pause"; }
+    XF86AudioPlay { spawn "bash" "-c" "$HOME/.config/niri/scripts/MediaCtrl.sh" "--pause"; }
+    XF86AudioNext { spawn "bash" "-c" "$HOME/.config/niri/scripts/MediaCtrl.sh" "--nxt"; }
+    XF86AudioPrev { spawn "bash" "-c" "$HOME/.config/niri/scripts/MediaCtrl.sh" "--prv"; }
+    XF86audiostop { spawn "bash" "-c" "$HOME/.config/niri/scripts/MediaCtrl.sh" "--stop"; }
+
+    XF86MonBrightnessUp { spawn-sh "qdbus org.kde.ScreenBrightness /org/kde/Solid/PowerManagement/Actions/BrightnessControl org.kde.Solid.PowerManagement.Actions.BrightnessControl.setBrightness $(($(qdbus org.kde.ScreenBrightness /org/kde/Solid/PowerManagement/Actions/BrightnessControl org.kde.Solid.PowerManagement.Actions.BrightnessControl.brightness) + 20))"; }
+    XF86MonBrightnessDown { spawn-sh "qdbus org.kde.ScreenBrightness /org/kde/Solid/PowerManagement/Actions/BrightnessControl org.kde.Solid.PowerManagement.Actions.BrightnessControl.setBrightness $(($(qdbus org.kde.ScreenBrightness /org/kde/Solid/PowerManagement/Actions/BrightnessControl org.kde.Solid.PowerManagement.Actions.BrightnessControl.brightness) - 20))"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
@@ -609,9 +634,9 @@ binds {
 
     // Center all fully visible columns on screen.
     // Mod+Ctrl+C { center-visible-columns; }
-    Mod+Ctrl+C { spawn "bash" "-c" "$HOME/.config/niri/scripts/waybar_layouts.sh"; }
-    Mod+Alt+C { spawn "bash" "-c" "$HOME/.config/niri/scripts/waybar_styles.sh"; }
-    Mod+Ctrl+X { spawn "bash" "-c" "$HOME/.config/niri/scripts/refresh.sh"; } 
+    Mod+Ctrl+C { spawn-sh "$HOME/.config/niri/scripts/waybar_layouts.sh"; }
+    Mod+Alt+C { spawn-sh "$HOME/.config/niri/scripts/waybar_styles.sh"; }
+    Mod+Ctrl+X { spawn-sh "$HOME/.config/niri/scripts/refresh.sh"; }
 
     // Finer width adjustments.
     // This command can also:
@@ -631,13 +656,13 @@ binds {
     // Move the focused window between the floating and the tiling layout.
     Mod+Shift+V       { toggle-window-floating; }
     Mod+Alt+V { switch-focus-between-floating-and-tiling; }
-    Mod+V { spawn "bash" "-c" "$HOME/.config/niri/scripts/clip.sh"; }
+    Mod+V { spawn-sh "$HOME/.config/niri/scripts/clip.sh"; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
     // rather than stacked on top of each other.
     Mod+W { toggle-column-tabbed-display; }
-    Mod+Shift+W { spawn "bash" "-c" "$HOME/.config/niri/scripts/setWall.sh"; }
+    Mod+Shift+W { spawn-sh "$HOME/.config/niri/scripts/setWall.sh"; }
 
     // Actions to switch layouts.
     // Note: if you uncomment these, make sure you do NOT have
@@ -646,7 +671,9 @@ binds {
     // since it will switch twice upon pressing the hotkey (once by xkb, once by niri).
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
-    Mod+Shift+S { spawn "flameshot" "gui"; }
+    Mod+Shift+S { spawn-sh "$HOME/.config/niri/scripts/screenshot-region.sh"; }
+    // Mod+Shift+D { spawn "grim" "-g" "$(slurp) -" "| swappy" "-f -"; }
+
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
@@ -668,4 +695,8 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+}
+
+switch-events {
+    lid-open { spawn "notify-send" "--expire-time=2000" "Welcome martian0x80!"; }
 }

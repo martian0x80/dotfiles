@@ -11,6 +11,7 @@ TYPE="any"
 DURATION=2
 BEZIER=".43,1.19,1,.4"
 SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
+rofi_override="element-icon{size:25%;}"
 
 # Ensure swww-daemon is running
 if ! pgrep -x "swww-daemon" >/dev/null; then
@@ -33,7 +34,7 @@ menu() {
 }
 
 # Rofi command
-rofi_command="rofi -i -show -dmenu -config $rofi_theme"
+rofi_command="rofi -i -show -dmenu -config $rofi_theme -theme-str $rofi_override"
 
 # Main logic
 main() {
